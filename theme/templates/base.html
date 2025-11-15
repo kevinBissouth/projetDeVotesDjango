@@ -1,0 +1,39 @@
+{% load static tailwind_tags %}
+<!DOCTYPE html>
+<html lang="en" data-theme="valentin">
+<head>
+    <title>Cyber Election</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    {% tailwind_css %}
+</head>
+
+<body class="font-serif leading-normal tracking-normal">
+    
+    
+            <div class="toast toast-top toast-end">
+                <div class="alert alert-info">
+                    <span>Hello la teame 👋</span>
+                </div>
+            </div>
+
+            <div class="container mx-auto">
+                <section class="flex items-center justify-center h-screen">
+                    <div class="text-center">
+                        <div class="p-2 alert alert-infos rounded-2xl">
+                            <h1 class="text-5xl ">Bienvenu la master class d'openMind</h1>
+                        </div>    
+                        <hr class="m-[10px]">
+                        <div class="text-2xl ">
+                            Comme dit, notre projet utilisera django pour le backend</span>
+                            <p>Pour le frontend, nous utiliserons tailwindcss et daisyUI
+                        </div>
+                    </div>      
+                </section>
+
+                {% block content %}
+                {% endblock %}
+            </div>
+</body>
+</html>
